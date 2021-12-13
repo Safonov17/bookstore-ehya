@@ -33,6 +33,26 @@
             display: flex
       &__navbar
          display: none
+         position: fixed
+         left: 0
+         right: 0
+         bottom: 0
+         top: 70px
+         background-color: #fff
+         &-visible
+            display: flex
+            flex-direction: column
+            align-items: center
+      &__menu
+         margin-left: 0
+         &-list
+            flex-direction: column
+            justify-content: center
+            width: auto
+         &-item
+            margin-bottom: 20px
+      &__button
+         margin-left: 0
    .menu
       &-button
          width: 22px
@@ -51,7 +71,7 @@
    .container
       max-width: 548px
    .main
-      padding-top: 50px
+      padding-top: 70px
       &__wrapper
          flex-direction: column
       &__buttons
