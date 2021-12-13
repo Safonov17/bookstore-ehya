@@ -16,28 +16,38 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-mobile-fixed">
       <div class="container">
         <div class="header__wrapper">
           <a class="header__logo" href="index.html">
             <img class="header__logo-image" src="img/logo.svg" alt="Logo" />
           </a>
-          <nav class="header__menu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">Рекомендации</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">Книги</a>
-              </li>
-              <li class="header__menu-item">
-                <a href="" class="header__menu-link">Блог</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="button header__button">Получить</button>
+          <div class="header__navbar">
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Рекомендации</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Книги</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Блог</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="button header__button">Получить</button>
+          </div>
+          <!-- /.header__navbar -->
+          <button class="menu-button header__mobile-menu">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+          </button>
         </div>
+        <!-- /.header__wrapper -->
       </div>
+      <!-- /.container -->
     </header>
     <section class="main">
       <div class="container">
@@ -64,9 +74,7 @@
           </div>
           <!-- /.main__info -->
           <div class="main__cover">
-            <div class="main__cover-wrapper">
-              <img class="main__image" src="img/book-image.jpg" alt="Picture book" />
-            </div>
+            <div class="main__cover-image"></div>
           </div>
           <!-- /.main__cover -->
         </div>

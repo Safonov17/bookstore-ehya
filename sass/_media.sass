@@ -1,23 +1,100 @@
 @media (max-width: 1200px)
    .container
       max-width: 945px
-   .header
-      padding-bottom: 30px
    .main
-      &__text 
-         max-width: 500px
-      &__button
-         &-buy
-            max-width: 200px
-            padding: 15px 30px
-         &-read
-            max-width: 200px
-            padding: 15px 30px
-      &__cover
-         width: 460px
+      &__text
+         max-width: 575px
 @media (max-width: 992px)
    .container
       max-width: 730px
-   .main__title
-      font-size: 40px
-      line-height: 45px
+   .header
+      padding: 0 0 10px
+   .main
+      &__text
+         max-width: 575px
+      &__buttons
+         display: flex
+         flex-direction: column
+         align-items: center
+      &__button
+         &-buy
+            min-width: 237px
+            margin: 0 0 10px
+@media (max-width: 768px)
+   .header
+      &-mobile
+         &-fixed
+            position: fixed
+            top: 0
+            left: 0
+            right: 0
+            z-index: 99
+         &-menu
+            display: flex
+      &__navbar
+         display: none
+   .menu
+      &-button
+         width: 22px
+         height: 18px
+         display: flex
+         align-items: center
+         justify-content: space-between
+         flex-direction: column
+         border: none
+         background-color: #fff
+         cursor: pointer
+         &__line
+            width: 22px
+            height: 2.2px
+            background-color: #3A4C66
+   .container
+      max-width: 548px
+   .main
+      padding-top: 50px
+      &__wrapper
+         flex-direction: column
+      &__buttons
+         flex-direction: row
+      &__button
+         &-buy
+            margin-bottom: 0
+            margin-right: 15px
+@media (max-width: 576px)
+   .container
+      max-width: 84vw
+   .main
+      &__cover
+         width: 400px
+         height: 530px
+      &__text
+         max-width: 415px
+      &__buttons
+         flex-direction: column
+         align-items: center
+      &__button
+         &-buy
+            min-width: 237px
+            margin: 0 0 10px
+@media (min-width: 320px) and (max-width: 480px)
+   .header
+      padding: 0 0 36px
+      &__wrapper
+         padding: 23px 0
+   .main
+      &__info
+         padding-top: 0
+      &__title
+         max-width: 280px
+         min-height: 160px
+         font-family: Roboto Condensed
+         font-style: normal
+         font-weight: bold
+         font-size: 32px
+         line-height: 40px
+         text-align: center
+         margin-bottom: 24px
+      &__subtitle
+         font-weight: normal
+         font-size: 16px
+         text-align: center
