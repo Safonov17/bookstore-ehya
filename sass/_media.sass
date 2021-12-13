@@ -3,7 +3,7 @@
       max-width: 945px
    .main
       &__text
-         max-width: 575px
+         max-width: 565px
 @media (max-width: 992px)
    .container
       max-width: 730px
@@ -11,15 +11,15 @@
       padding: 0 0 10px
    .main
       &__text
-         max-width: 575px
+         max-width: 540px
       &__buttons
          display: flex
          flex-direction: column
-         align-items: center
+         align-items: flex-start
       &__button
          &-buy
-            min-width: 237px
             margin: 0 0 10px
+            font-size: 18px
 @media (max-width: 768px)
    .header
       &-mobile
@@ -37,7 +37,7 @@
          left: 0
          right: 0
          bottom: 0
-         top: 70px
+         top: 68px
          background-color: #fff
          &-visible
             display: flex
@@ -94,18 +94,21 @@
          align-items: center
       &__button
          &-buy
-            min-width: 237px
             margin: 0 0 10px
 @media (min-width: 320px) and (max-width: 480px)
+   .container
+      max-width: 86vw
    .header
-      padding: 0 0 36px
+      padding: 0
       &__wrapper
-         padding: 23px 0
+         padding: 20px 0
    .main
+      padding-top: 100px
       &__info
          padding-top: 0
+         padding-bottom: 35px
       &__title
-         max-width: 280px
+         max-width: inherit
          min-height: 160px
          font-family: Roboto Condensed
          font-style: normal
@@ -115,6 +118,33 @@
          text-align: center
          margin-bottom: 24px
       &__subtitle
+         max-width: inherit
          font-weight: normal
          font-size: 16px
          text-align: center
+         margin-bottom: 33px
+      &__text
+         font-style: normal
+         font-weight: normal
+         font-size: 16px
+         line-height: 23px
+         text-align: center
+         margin-bottom: 16px
+      &__button
+         &-buy
+            max-width: 176px
+            min-height: 40px
+            font-size: 16px
+            padding: 7px 18px
+            margin-bottom: 15px
+         &-read
+            max-width: 176px
+            min-height: 40px
+            font-size: 16px
+            padding: 5px 27px
+      &__cover
+         width: 280px
+         height: 333px
+         &-image
+            width: 143px
+            height: 215px
