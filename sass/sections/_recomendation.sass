@@ -19,12 +19,11 @@
       display: flex
       align-items: center
       justify-content: space-between
-      border: 1px solid tomato
       max-width: 358px
       min-height: 260px
       border-radius: 8px
       padding: 11px
-      margin: 0 32px 32px 0
+      margin: 0 30px 27px 0
       &-image img
          width: 160px
          height: 238px
@@ -95,6 +94,9 @@
       cursor: pointer
 
    &__boxes
+      background-color: rgba(179, 186, 197, 0.1)
+      border-radius: 8px
+      padding: 24px
       &-line
          display: block
          border: 1px solid #ECEEF2
@@ -102,8 +104,9 @@
    &__box
       display: flex
       align-items: center
-      max-width: 312px
-      min-height: 182px
+      width: 312px
+      height: 182px
+      margin-bottom: 30px
       &-image img
          width: 120px
          height: 178px
@@ -138,7 +141,10 @@
          color: #FFFFFF
          background: $color-text
          border-radius: 20px
+         padding: 7px 20px
+         cursor: pointer
    &__top-link
+      display: block
       font-family: Roboto Condensed
       font-style: normal
       font-weight: bold
