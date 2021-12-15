@@ -22,6 +22,7 @@
       justify-content: space-between
       max-width: 358px
       min-height: 260px
+      border: 1px solid #ECEEF2
       border-radius: 8px
       padding: 11px
       margin: 0 30px 27px 0
@@ -75,7 +76,7 @@
          display: flex
          align-items: center
          justify-content: space-between
-         max-width: 144px
+         width: 144px
       &-icon
          cursor: pointer
    &__button-more
@@ -96,18 +97,25 @@
 
    &__boxes
       background-color: rgba(179, 186, 197, 0.1)
-      border-radius: 8px
+      border-radius: 8px 8px 0 0
       padding: 24px
       &-line
+         width: 312px
+         height: 1px
          display: block
          border: 1px solid #ECEEF2
-         margin: 26px 0 25px
+         margin: auto
+      &-container
+         background-color: rgba(179, 186, 197, 0.1)
+         border-radius: 0 0 8px 8px
    &__box
       display: flex
       align-items: center
       width: 312px
       height: 182px
-      margin-bottom: 30px
+      margin-bottom: 33px
+      &:last-child
+         margin-bottom: 0
       &-image img
          width: 120px
          height: 178px
@@ -155,3 +163,4 @@
       letter-spacing: 0.2px
       color: #1565D8
       text-transform: uppercase
+      padding: 25px 124px

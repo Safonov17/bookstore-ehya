@@ -1,4 +1,36 @@
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function () {
-  document.querySelector(".header__navbar").classList.toggle("header__navbar-visible");
+$(document).ready(function () {
+  // Мобильное меню
+
+  var menuButton = document.querySelector(".menu-button");
+  menuButton.addEventListener("click", function () {
+    document.querySelector(".header__navbar").classList.toggle("header__navbar-visible");
+  });
+
+  // Слайдер "Жанры"
+
+  const genreSlider = new Swiper(".genre-slider", {
+    direction: "horizontal",
+    loop: true,
+
+    navigation: {
+      nextEl: ".genre__button-next",
+      prevEl: ".genre__button-prev",
+    },
+
+    slidesPerView: "4",
+  });
+
+  // Слайдер "Неизданные книги"
+
+  const unreleasedSlider = new Swiper(".unreleased__swiper", {
+    direction: "horizontal",
+    loop: true,
+
+    navigation: {
+      nextEl: ".unreleased__button-next",
+      prevEl: ".unreleased__button-prev",
+    },
+
+    slidesPerView: "5",
+  });
 });

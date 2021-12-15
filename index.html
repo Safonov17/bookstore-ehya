@@ -13,6 +13,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -114,7 +115,7 @@
                   <img src="img/recomendations/rec-card-image-2.jpg" alt="Icon: Recomendation" />
                 </div>
                 <div class="recomendation__card-info">
-                  <h4 class="recomendation__card-title">Educated: a Memoir</h4>
+                  <h4 class="recomendation__card-title">Educated: <br />a Memoir</h4>
                   <h5 class="recomendation__card-subtitle">Education</h5>
                   <div class="recomendation__card-price">$28.00</div>
                   <div class="recomendation__card-cover">
@@ -150,7 +151,7 @@
                   <img src="img/recomendations/rec-card-image-4.jpg" alt="Icon: Recomendation" />
                 </div>
                 <div class="recomendation__card-info">
-                  <h4 class="recomendation__card-title">There There: a Novel by TO</h4>
+                  <h4 class="recomendation__card-title">There There: <br />a Novel by TO</h4>
                   <h5 class="recomendation__card-subtitle">Novel</h5>
                   <div class="recomendation__card-price">$20.00</div>
                   <div class="recomendation__card-cover">
@@ -168,7 +169,7 @@
                   <img src="img/recomendations/rec-card-image-5.jpg" alt="Icon: Recomendation" />
                 </div>
                 <div class="recomendation__card-info">
-                  <h4 class="recomendation__card-title">WMNDFL: The Inspiration</h4>
+                  <h4 class="recomendation__card-title">WMNDFL: <br />The Inspiration</h4>
                   <h5 class="recomendation__card-subtitle">Business</h5>
                   <div class="recomendation__card-price">$23.00</div>
                   <div class="recomendation__card-cover">
@@ -186,7 +187,7 @@
                   <img src="img/recomendations/rec-card-image-6.jpg" alt="Icon: Recomendation" />
                 </div>
                 <div class="recomendation__card-info">
-                  <h4 class="recomendation__card-title">Making Things Happen</h4>
+                  <h4 class="recomendation__card-title">Making <br />Things Happen</h4>
                   <h5 class="recomendation__card-subtitle">Motivation</h5>
                   <div class="recomendation__card-price">$23.00</div>
                   <div class="recomendation__card-cover">
@@ -199,9 +200,9 @@
                 <!-- /.recomendation__card-info -->
               </div>
               <!-- /.recomendation__card -->
-              <button class="recomendation__button-more">Больше рекомендаций</button>
             </div>
             <!-- /.recomendation__cards -->
+            <button class="recomendation__button-more">Больше рекомендаций</button>
           </div>
           <!-- /.recomendation__wrapper-more -->
           <div class="recomendation__wrapper-top">
@@ -255,10 +256,12 @@
                 <!-- /.recomendation__box-info -->
               </div>
               <!-- /.recomendation__box -->
+            </div>
+            <!-- /.recomendation__boxes -->
+            <div class="recomendation__boxes-container">
               <span class="recomendation__boxes-line"></span>
               <a href="#" class="recomendation__top-link">Лучшие книги</a>
             </div>
-            <!-- /.recomendation__boxes -->
           </div>
           <!-- /.recomendation__wrapper-top -->
         </div>
@@ -271,37 +274,107 @@
     <section class="genre">
       <div class="container">
         <span class="genre-line"></span>
-        <div class="genre__cards">
-          <div class="genre__card">
-            <img class="genre__card-image" src="img/icons/business.svg" alt="Icon: Business" />
-            <h2 class="genre__card-title">Бизнес & Финансы</h2>
-            <span class="genre__card-subtitle">Книги про мир бизнеса</span>
+        <div class="swiper genre-slider">
+          <div class="swiper-wrapper genre__swiper-wrapper">
+            <div class="swiper-slide genre__swiper-slide">
+              <div class="genre__card">
+                <img class="genre__card-icon" src="img/icons/business.svg" alt="Icon: Business" />
+                <h2 class="genre__card-title">Бизнес & Финансы</h2>
+                <span class="genre__card-subtitle">Книги про мир бизнеса</span>
+              </div>
+              <!-- /.genre__card -->
+            </div>
+            <!-- /.genre__swiper-slide -->
+            <div class="swiper-slide genre__swiper-slide">
+              <div class="genre__card">
+                <img class="genre__card-icon" src="img/icons/motivation.svg" alt="Icon: Motivation" />
+                <h2 class="genre__card-title">Самомотиватия</h2>
+                <span class="genre__card-subtitle">Книги о мотивации</span>
+              </div>
+              <!-- /.genre__card -->
+            </div>
+            <!-- /.genre__swiper-slide -->
+            <div class="swiper-slide genre__swiper-slide">
+              <div class="genre__card">
+                <img class="genre__card-icon" src="img/icons/novel.svg" alt="Icon: Novel" />
+                <h2 class="genre__card-title">Романы Теленовеллы</h2>
+                <span class="genre__card-subtitle">Книги с крутыми историями</span>
+              </div>
+              <!-- /.genre__card -->
+            </div>
+            <!-- /.genre__swiper-slide -->
+            <div class="swiper-slide genre__swiper-slide">
+              <div class="genre__card">
+                <img class="genre__card-icon" src="img/icons/future.svg" alt="Icon: Future" />
+                <h2 class="genre__card-title">Навыки будущего</h2>
+                <span class="genre__card-subtitle">Книги для самоподготовки</span>
+              </div>
+              <!-- /.genre__card -->
+            </div>
+            <!-- /.genre__swiper-slide -->
           </div>
-          <!-- /.genre__card -->
-          <div class="genre__card">
-            <img class="genre__card-image" src="img/icons/motivation.svg" alt="Icon: Motivation" />
-            <h2 class="genre__card-title">Самомотиватия</h2>
-            <span class="genre__card-subtitle">Книги о мотивации</span>
-          </div>
-          <!-- /.genre__card -->
-          <div class="genre__card">
-            <img class="genre__card-image" src="img/icons/novel.svg" alt="Icon: Novel" />
-            <h2 class="genre__card-title">Романы Теленовеллы</h2>
-            <span class="genre__card-subtitle">Книги с крутыми историями</span>
-          </div>
-          <!-- /.genre__card -->
-          <div class="genre__card">
-            <img class="genre__card-image" src="img/icons/future.svg" alt="Icon: Future" />
-            <h2 class="genre__card-title">Навыки будущего</h2>
-            <span class="genre__card-subtitle">Книги для самоподготовки</span>
-          </div>
-          <!-- /.genre__card -->
+          <!-- /.swiper-wrapper -->
         </div>
-        <!-- /.genre__cards -->
+        <!-- /.genre-slider -->
       </div>
       <!-- /.container -->
+      <button class="genre__button genre__button-prev"></button>
+      <button class="genre__button genre__button-next"></button>
     </section>
 
+    <section class="unreleased">
+      <div class="container">
+        <h2 class="unreleased__title">Неизданные книги</h2>
+        <!-- Slider main container -->
+        <div class="swiper unreleased__swiper">
+          <div class="swiper-wrapper unreleased__swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide unreleased__swiper-slide">
+              <img
+                class="unreleased__swiper-image"
+                src="img/unreleased/unreleased-slide-1.jpg"
+                alt="Picture: Unreleased book"
+              />
+            </div>
+            <div class="swiper-slide unreleased__swiper-slide">
+              <img
+                class="unreleased__swiper-image"
+                src="img/unreleased/unreleased-slide-2.jpg"
+                alt="Picture: Unreleased book"
+              />
+            </div>
+            <div class="swiper-slide unreleased__swiper-slide">
+              <img
+                class="unreleased__swiper-image"
+                src="img/unreleased/unreleased-slide-3.jpg"
+                alt="Picture: Unreleased book"
+              />
+            </div>
+            <div class="swiper-slide unreleased__swiper-slide">
+              <img
+                class="unreleased__swiper-image"
+                src="img/unreleased/unreleased-slide-4.jpg"
+                alt="Picture: Unreleased book"
+              />
+            </div>
+            <div class="swiper-slide unreleased__swiper-slide">
+              <img
+                class="unreleased__swiper-image"
+                src="img/unreleased/unreleased-slide-5.jpg"
+                alt="Picture: Unreleased book"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- /.unreleased__swiper -->
+      </div>
+      <!-- /.container -->
+      <button class="unreleased__button unreleased__button-prev"></button>
+      <button class="unreleased__button unreleased__button-next"></button>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

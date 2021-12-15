@@ -4,6 +4,28 @@
    .main
       &__text
          max-width: 565px
+   .recomendation
+      padding-bottom: 60px
+      &__wrapper
+         flex-direction: column
+         &-more
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+         &-top
+            width: 748px
+      &__cards
+         justify-content: flex-start
+         margin-bottom: 30px
+      &__card
+         &:nth-child(2n)
+            margin-right: 0
+      &__button
+         &-more
+            margin-bottom: 30px
+      &__boxes
+         display: flex
+         flex-wrap: wrap
 @media (max-width: 992px)
    .container
       max-width: 730px
@@ -18,9 +40,20 @@
          align-items: flex-start
       &__button
          &-buy
-            margin: 0 0 10px
+            max-width: 235px
             font-size: 18px
+            margin: 0 0 10px
+         &-read
+            max-width: 235px
+   .recomendation
+      &__card
+         margin: 0 19px 27px 0
+      &__button
+         &-more
+            padding: 25px 274px
 @media (max-width: 768px)
+   .container
+      max-width: 548px
    .header
       &-mobile
          &-fixed
@@ -68,8 +101,6 @@
             width: 22px
             height: 2.2px
             background-color: #3A4C66
-   .container
-      max-width: 548px
    .main
       padding-top: 70px
       &__wrapper
@@ -80,6 +111,14 @@
          &-buy
             margin-bottom: 0
             margin-right: 15px
+   .recomendation
+      &__button
+         &-more 
+            padding: 25px 183px
+      &__card
+         &:not(:first-child)
+            display: none
+
 @media (max-width: 576px)
    .container
       max-width: 84vw
@@ -104,6 +143,7 @@
          padding: 20px 0
    .main
       padding-top: 100px
+      padding-bottom: 56px
       &__info
          padding-top: 0
          padding-bottom: 35px
