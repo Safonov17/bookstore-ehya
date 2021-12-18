@@ -12,6 +12,7 @@ $(document).ready(function () {
     direction: "horizontal",
     loop: true,
     slidesPerView: 4,
+    rows: 2,
     navigation: {
       nextEl: ".genre__button-next",
       prevEl: ".genre__button-prev",
