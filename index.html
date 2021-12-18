@@ -541,7 +541,7 @@
         <div class="newsletter__wrapper">
           <h2 class="newsletter__title">Будь первым, кто узнает о наших акциях</h2>
           <form class="subscribe newsletter__subscribe form" method="POST" action="send.php">
-            <input class="subscribe__input" type="email" placeholder="Ваш Emaill" name="email" required />
+            <input class="subscribe__input" type="email" name="email" placeholder="Ваш Emaill" required />
             <img class="subscribe__input-icon" src="img/icons/mail.svg" alt="Icon: mail" />
             <button class="subscribe__input-button">Регистрация</button>
           </form>
@@ -556,19 +556,36 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__primary">
-            <div class="footer__logo">
-              <img class="footer__logo-image" src="img/logo.svg" alt="Icon: Logo" />
+            <div class="footer__primary-logo">
+              <img class="footer__primary-image" src="img/logo.svg" alt="Icon: Logo" />
             </div>
-            <p class="footer__text">Создайте современный и креативный веб-сайт с crealand</p>
-            <div class="footer__icons-box">
-              <img class="footer__icon" src="img/icons/footer/google.svg" alt="Icon: google" />
-              <img class="footer__icon" src="img/icons/footer/twitter.svg" alt="Icon: twitter" />
-              <img class="footer__icon" src="img/icons/footer/instagram.svg" alt="Icon: instagram" />
-              <img class="footer__icon" src="img/icons/footer/linkedin.svg" alt="Icon: linkedin" />
-            </div>
+            <p class="footer__primary-text">Создайте современный и креативный веб-сайт с crealand</p>
+            <ul class="footer__icons">
+              <li class="footer__icons-item">
+                <a class="footer__icons-link" target="_blank" href="https://www.google.ru/">
+                  <img class="footer__icons-image" src="img/icons/footer/google.svg" alt="Icon: google" />
+                </a>
+              </li>
+              <li class="footer__icons-item">
+                <a class="footer__icons-link" target="_blank" href="https://twitter.com/usedesignspace/">
+                  <img class="footer__icons-image" src="img/icons/footer/twitter.svg" alt="Icon: twitter" />
+                </a>
+              </li>
+              <li class="footer__icons-item">
+                <a class="footer__icons-link" target="_blank" href="https://instagram.com/designspace.io/">
+                  <img class="footer__icons-image" src="img/icons/footer/instagram.svg" alt="Icon: instagram" />
+                </a>
+              </li>
+              <li class="footer__icons-item">
+                <a class="footer__icons-link" target="_blank" href="https://ru.linkedin.com/">
+                  <img class="footer__icons-image" src="img/icons/footer/linkedin.svg" alt="Icon: linkedin" />
+                </a>
+              </li>
+            </ul>
+            <!-- /.footer__icons-box -->
           </div>
           <!-- /.footer__primary -->
-          <div class="footer__secondary">
+          <div class="footer__product">
             <h3 class="footer__list-title">Продукт</h3>
             <ul class="footer__list">
               <li class="footer__item">
@@ -588,6 +605,9 @@
               </li>
             </ul>
             <!-- /.footer__list -->
+          </div>
+          <!-- /.footer__product -->
+          <div class="footer__services">
             <h3 class="footer__list-title">Сервисы</h3>
             <ul class="footer__list">
               <li class="footer__item">
@@ -607,6 +627,9 @@
               </li>
             </ul>
             <!-- /.footer__list -->
+          </div>
+          <!-- /.footer__services -->
+          <div class="footer__company">
             <h3 class="footer__list-title">Компания</h3>
             <ul class="footer__list">
               <li class="footer__item">
@@ -623,6 +646,9 @@
               </li>
             </ul>
             <!-- /.footer__list -->
+          </div>
+          <!-- /.footer__company -->
+          <div class="footer__more">
             <h3 class="footer__list-title">Еще..</h3>
             <ul class="footer__list">
               <li class="footer__item">
@@ -637,7 +663,7 @@
             </ul>
             <!-- /.footer__list -->
           </div>
-          <!-- /.footer__secondary -->
+          <!-- /.footer__more -->
           <div class="footer__bottom">
             <img class="footer__bottom-icon" src="img/icons/footer/heart.svg" alt="Icon: heart" />
             <span class="footer__bottom-copyright">Copyright © 2019. Crafted with love.</span>
