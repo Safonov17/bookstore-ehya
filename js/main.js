@@ -33,4 +33,15 @@ $(document).ready(function () {
 
     slidesPerView: "5",
   });
+
+  // Обработка форм
+
+  $(".subscribe").validate({
+    messages: {
+      email: {
+        required: "Нам нужен ваш адрес электронной почты, чтобы с вами связаться",
+        email: "Ваш адрес электронной почты должен быть в формате name@domain.com",
+      },
+    },
+  });
 });

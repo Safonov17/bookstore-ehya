@@ -429,7 +429,7 @@
     </section>
     <!-- /.author -->
 
-    <section class="cooperation">
+    <div class="cooperation">
       <div class="container">
         <div class="cooperation__title">Некоторые из издателей, с которыми мы сотрудничали</div>
         <div class="cooperation__wrapper">
@@ -477,7 +477,7 @@
         <!-- /.cooperation__wrapper -->
       </div>
       <!-- /.container -->
-    </section>
+    </div>
     <!-- /.cooperation -->
 
     <section class="blog">
@@ -540,7 +540,7 @@
       <div class="container">
         <div class="newsletter__wrapper">
           <h2 class="newsletter__title">Будь первым, кто узнает о наших акциях</h2>
-          <form class="subscribe newsletter__subscribe form" method="POST" action="send.php">
+          <form class="subscribe newsletter__subscribe form" action="send.php" method="POST">
             <input class="subscribe__input" type="email" name="email" placeholder="Ваш Emaill" required />
             <img class="subscribe__input-icon" src="img/icons/mail.svg" alt="Icon: mail" />
             <button class="subscribe__input-button">Регистрация</button>
@@ -556,9 +556,9 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__primary">
-            <div class="footer__primary-logo">
+            <a class="footer__primary-logo" href="index.html">
               <img class="footer__primary-image" src="img/logo.svg" alt="Icon: Logo" />
-            </div>
+            </a>
             <p class="footer__primary-text">Создайте современный и креативный веб-сайт с crealand</p>
             <ul class="footer__icons">
               <li class="footer__icons-item">
@@ -677,6 +677,7 @@
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
