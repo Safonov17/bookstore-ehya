@@ -11,13 +11,11 @@ $(document).ready(function () {
   const genreSlider = new Swiper(".genre-slider", {
     direction: "horizontal",
     loop: true,
-
+    slidesPerView: 4,
     navigation: {
       nextEl: ".genre__button-next",
       prevEl: ".genre__button-prev",
     },
-
-    slidesPerView: "4",
   });
 
   // Слайдер "Неизданные книги"
@@ -25,13 +23,11 @@ $(document).ready(function () {
   const unreleasedSlider = new Swiper(".unreleased__swiper", {
     direction: "horizontal",
     loop: true,
-
+    slidesPerView: "5",
     navigation: {
       nextEl: ".unreleased__button-next",
       prevEl: ".unreleased__button-prev",
     },
-
-    slidesPerView: "5",
   });
 
   // Обработка форм

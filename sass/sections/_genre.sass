@@ -1,6 +1,12 @@
-.genre
+.container
    position: relative
+.genre
    padding-bottom: 100px
+   &-slider
+      min-width: 0
+   &__swiper
+      &-slide
+         margin-right: 3px
    &-line
       display: block
       width: 100%
@@ -41,7 +47,7 @@
          color: #5A7184
    &__button
       position: absolute
-      top: 38%
+      top: 51%
       transform: translateY(-50%)
       z-index: 99
       width: 56px
@@ -55,13 +61,10 @@
       background-size: 14px
       background-position: center
       &-next
-         right: 140px
+         right: 0px
          background-image: url(../img/icons/arrow-right.svg)
          transform: translateX(50%)
       &-prev
-         left: 140px
+         left: 0px
          background-image: url(../img/icons/arrow-left.svg)
          transform: translateX(-50%)
-   &__swiper
-      &-slide
-         margin-right: 3px

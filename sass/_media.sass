@@ -44,13 +44,16 @@
             font-size: 18px
             margin: 0 0 10px
          &-read
-            max-width: 235px
+            max-width: 237px
    .recomendation
       &__card
          margin: 0 19px 27px 0
       &__button
          &-more
             padding: 25px 274px
+      &__wrapper
+         &-top
+            width: 100%
 @media (max-width: 768px)
    .container
       max-width: 548px
@@ -118,7 +121,6 @@
       &__card
          &:not(:first-child)
             display: none
-
 @media (max-width: 576px)
    .container
       max-width: 84vw
@@ -188,3 +190,7 @@
          &-image
             width: 143px
             height: 215px
+   .recomendation
+      &__card
+         max-width: 280px
+         min-height: 312px
